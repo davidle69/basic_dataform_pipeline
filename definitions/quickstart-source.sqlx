@@ -1,0 +1,19 @@
+config {
+    type: "view"
+}
+
+SELECT
+  "apple" AS ${constants.columnName1},
+  2 AS ${constants.columnName2}
+UNION ALL
+SELECT
+  "oranges" AS ${constants.columnName1},
+  5 AS ${constants.columnName2}
+UNION ALL
+SELECT
+  "pears" AS ${constants.columnName1},
+  1 AS ${constants.columnName2}
+UNION ALL
+SELECT
+  "bananas" AS ${constants.columnName1},
+  0 AS ${constants.columnName2}

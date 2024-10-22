@@ -1,0 +1,5 @@
+defaultProject: davidle-sandpit
+defaultLocation: us-east1
+defaultDataset: intelia_dl_test_target_dataset
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.0

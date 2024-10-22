@@ -1,0 +1,19 @@
+config {
+    type: "table",
+    schema: "intelia_dl_test_target_dataset",
+    name: "gold_table"
+}
+
+SELECT
+  state,
+  CASE
+    WHEN gender IN ("M", "F") THEN gender
+    ELSE NULL
+END
+  AS gender,
+  SAFE_CAST(year AS INT64) AS year,
+  name,
+  SAFE_CAST(number AS INT64) AS number,
+  PARSE_DATE('%d/%m/%Y', created_date) AS created_date
+FROM
+  `intelia_dl_test_target_dataset.silver_table`

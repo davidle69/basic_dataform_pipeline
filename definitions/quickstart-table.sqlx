@@ -1,0 +1,11 @@
+config {
+    type: "table"
+}
+
+SELECT
+  ${constants.columnName1},
+  SUM(${constants.columnName2}) AS ${constants.columnName2}
+FROM
+  ${ref("quickstart-source")}
+GROUP BY
+  1
