@@ -22,5 +22,7 @@ The solution requires specific GCP permissions to function correctly. The servic
 1) Source Data: The workflow begins with raw data stored in a BigQuery table
 2) Transformation: Basic transformations are applied to selected columns
 3) Output: Transformed data is written to a new table within the same BigQuery dataset
-   
+
+![image](https://github.com/user-attachments/assets/6ae01b8d-28d4-40b3-afca-2928f4457ab5)
+
 This implementation provides a foundation for understanding Dataform's capabilities and can be expanded to accommodate more complex transformation requirements.
